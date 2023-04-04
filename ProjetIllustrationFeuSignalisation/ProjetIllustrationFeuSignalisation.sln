@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetIllustrationFeuSignalisation", "ProjetIllustrationFeuSignalisation\ProjetIllustrationFeuSignalisation.csproj", "{771FCFB0-6654-4CD0-A7F2-FEA23640110C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeuxSignalisations", "FeuSignalisation\FeuxSignalisations.csproj", "{67DA63D8-76BF-4489-8DD9-37EA64C063D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{771FCFB0-6654-4CD0-A7F2-FEA23640110C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771FCFB0-6654-4CD0-A7F2-FEA23640110C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771FCFB0-6654-4CD0-A7F2-FEA23640110C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771FCFB0-6654-4CD0-A7F2-FEA23640110C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67DA63D8-76BF-4489-8DD9-37EA64C063D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67DA63D8-76BF-4489-8DD9-37EA64C063D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67DA63D8-76BF-4489-8DD9-37EA64C063D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67DA63D8-76BF-4489-8DD9-37EA64C063D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {582F4033-1FB4-4899-BC6A-07162EC7B8C8}
+	EndGlobalSection
+EndGlobal
