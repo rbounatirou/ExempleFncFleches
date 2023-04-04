@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\WForm\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\FeuxSignalisations.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\WForm\\exemplefeucirculation\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\FeuxSignalisations.csproj",
       "projectName": "FeuxSignalisations",
-      "projectPath": "C:\\Users\\user\\Documents\\WForm\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\FeuxSignalisations.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\WForm\\exemplefeucirculation\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\FeuxSignalisations.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\WForm\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\WForm\\exemplefeucirculation\\ProjetIllustrationFeuSignalisation\\FeuSignalisation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

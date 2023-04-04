@@ -1,0 +1,12 @@
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\bin\Debug\net6.0\FeuxSignalisations.deps.json
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\bin\Debug\net6.0\FeuxSignalisations.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\bin\Debug\net6.0\FeuxSignalisations.pdb
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.csproj.AssemblyReference.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.AssemblyInfoInputs.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.AssemblyInfo.cs
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\refint\FeuxSignalisations.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\FeuxSignalisations.pdb
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\FeuSignalisation\obj\Debug\net6.0\ref\FeuxSignalisations.dll

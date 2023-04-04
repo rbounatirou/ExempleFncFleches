@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProjetIllustrationFeuSignalisation/1.0.0": {
+        "dependencies": {
+          "FeuxSignalisations": "1.0.0",
+          "VerificationSaisie": "1.0.0"
+        },
+        "runtime": {
+          "ProjetIllustrationFeuSignalisation.dll": {}
+        }
+      },
+      "FeuxSignalisations/1.0.0": {
+        "runtime": {
+          "FeuxSignalisations.dll": {}
+        }
+      },
+      "VerificationSaisie/1.0.0": {
+        "runtime": {
+          "VerificationSaisie.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetIllustrationFeuSignalisation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FeuxSignalisations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VerificationSaisie/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -8,13 +8,13 @@
         private int tempsVertMilliseconds;
         private bool estAllimente;
         private Thread sonThread;
-        private EnumEtatFeuSignalisation sonEtat;        
+        public EnumEtatFeuSignalisation sonEtat;  
 
         public delegate void OnStateChanged(FeuSignalisation sender, EnumEtatFeuSignalisation nouvelEtat);
         public event OnStateChanged Event_OnStateChanged;
-        private EnumEtatFeuSignalisation SonEtat
+        public EnumEtatFeuSignalisation SonEtat
         {
-            set => changerEtatFeuSignalisation(value);
+            get => sonEtat; private set => changerEtatFeuSignalisation(value);
         }
 
 

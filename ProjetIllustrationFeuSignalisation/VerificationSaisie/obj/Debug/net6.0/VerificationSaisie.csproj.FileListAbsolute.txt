@@ -1,0 +1,12 @@
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\bin\Debug\net6.0\VerificationSaisie.deps.json
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\bin\Debug\net6.0\VerificationSaisie.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\bin\Debug\net6.0\VerificationSaisie.pdb
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.csproj.AssemblyReference.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.AssemblyInfoInputs.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.AssemblyInfo.cs
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\refint\VerificationSaisie.dll
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\VerificationSaisie.pdb
+C:\Users\user\Documents\WForm\exemplefeucirculation\ProjetIllustrationFeuSignalisation\VerificationSaisie\obj\Debug\net6.0\ref\VerificationSaisie.dll
