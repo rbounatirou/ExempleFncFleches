@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BibliControles\BibliControles.csproj" />
     <ProjectReference Include="..\FeuSignalisation\FeuxSignalisations.csproj" />
     <ProjectReference Include="..\VerificationSaisie\VerificationSaisie.csproj" />
   </ItemGroup>

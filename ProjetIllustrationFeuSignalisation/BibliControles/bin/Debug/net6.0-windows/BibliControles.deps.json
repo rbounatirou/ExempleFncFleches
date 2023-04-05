@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BibliControles/1.0.0": {
+        "dependencies": {
+          "FeuxSignalisations": "1.0.0"
+        },
+        "runtime": {
+          "BibliControles.dll": {}
+        }
+      },
+      "FeuxSignalisations/1.0.0": {
+        "runtime": {
+          "FeuxSignalisations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BibliControles/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FeuxSignalisations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

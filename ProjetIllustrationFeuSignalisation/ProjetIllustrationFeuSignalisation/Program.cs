@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic;
+
 namespace ProjetIllustrationFeuSignalisation
 {
     internal static class Program
@@ -11,6 +13,7 @@ namespace ProjetIllustrationFeuSignalisation
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            
             Application.Run(new MainForm());
         }
     }

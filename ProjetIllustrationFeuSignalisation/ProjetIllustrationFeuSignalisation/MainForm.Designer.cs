@@ -35,6 +35,7 @@
             this.rougeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelControle = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // ajouterFeuToolStripMenuItem
             // 
             this.ajouterFeuToolStripMenuItem.Name = "ajouterFeuToolStripMenuItem";
-            this.ajouterFeuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajouterFeuToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.ajouterFeuToolStripMenuItem.Text = "Ajouter feu";
             this.ajouterFeuToolStripMenuItem.Click += new System.EventHandler(this.ajouterFeuToolStripMenuItem_Click);
             // 
@@ -77,28 +78,37 @@
             // rougeToolStripMenuItem
             // 
             this.rougeToolStripMenuItem.Name = "rougeToolStripMenuItem";
-            this.rougeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rougeToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.rougeToolStripMenuItem.Text = "Rouge";
             // 
             // orangeToolStripMenuItem
             // 
             this.orangeToolStripMenuItem.Name = "orangeToolStripMenuItem";
-            this.orangeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orangeToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.orangeToolStripMenuItem.Text = "Orange";
             // 
             // vertToolStripMenuItem
             // 
             this.vertToolStripMenuItem.Name = "vertToolStripMenuItem";
-            this.vertToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vertToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.vertToolStripMenuItem.Text = "Vert";
+            // 
+            // panelControle
+            // 
+            this.panelControle.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControle.Location = new System.Drawing.Point(600, 24);
+            this.panelControle.Name = "panelControle";
+            this.panelControle.Size = new System.Drawing.Size(200, 426);
+            this.panelControle.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelControle);
             this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "MainForm";
@@ -118,5 +128,6 @@
         private ToolStripMenuItem rougeToolStripMenuItem;
         private ToolStripMenuItem orangeToolStripMenuItem;
         private ToolStripMenuItem vertToolStripMenuItem;
+        private Panel panelControle;
     }
 }

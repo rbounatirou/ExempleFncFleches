@@ -1,0 +1,17 @@
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\bin\Debug\net6.0-windows\BibliControles.deps.json
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\bin\Debug\net6.0-windows\BibliControles.dll
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\bin\Debug\net6.0-windows\BibliControles.pdb
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\bin\Debug\net6.0-windows\FeuxSignalisations.dll
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\bin\Debug\net6.0-windows\FeuxSignalisations.pdb
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.csproj.AssemblyReference.cache
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.UserControlFeuSignalisationEtat.resources
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.csproj.GenerateResource.cache
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.AssemblyInfoInputs.cache
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.AssemblyInfo.cs
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.csproj.CoreCompileInputs.cache
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.csproj.CopyComplete
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.dll
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\refint\BibliControles.dll
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\BibliControles.pdb
+C:\Users\rbounatirou\Desktop\github\ExempleFncFleches\ProjetIllustrationFeuSignalisation\BibliControles\obj\Debug\net6.0-windows\ref\BibliControles.dll

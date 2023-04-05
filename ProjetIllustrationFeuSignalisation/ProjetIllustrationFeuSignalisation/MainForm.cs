@@ -1,4 +1,5 @@
-﻿using FeuxSignalisations;
+﻿using BibliControles;
+using FeuxSignalisations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,6 @@ namespace ProjetIllustrationFeuSignalisation
         private void ajouterFeuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormInfoFeu fif = new FormInfoFeu();
-            fif.MdiParent = this;
             fif.Show();
             fif.FormClosing += OnCloseFormInfoFeu;
         }
@@ -49,48 +49,49 @@ namespace ProjetIllustrationFeuSignalisation
             GenererPasserRouge(f);
             GenererPasserOrange(f);
             GenererPasserVert(f);
+            AjouterFeuIHM(f);
             nbFeux++;
         }
-        private void GenererPasserRouge(FeuSignalisation f)
+
+        private void AjouterFeuIHM(FeuSignalisation f)
         {
-            ToolStripItem added = rougeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x":""), nbFeux));
-            f.Event_OnStateChanged += ((p, e) => {
-                bool expression = e != EnumEtatFeuSignalisation.Rouge;
-                if (InvokeRequired)
-                    Invoke(() => UpdateMenu(added, expression));
-                else
-                    UpdateMenu(added, expression);
-            });
-
+            UserControlFeuSignalisationEtat uc = new UserControlFeuSignalisationEtat(f, nbFeux);
+            uc.Dock = DockStyle.Top;
+            panelControle.Controls.Add(uc);
         }
-
+       
         private void UpdateMenu(ToolStripItem t, bool b)
         {
             t.Enabled = b;
         }
 
+        private Action<FeuSignalisation, EnumEtatFeuSignalisation> GenerateAction(ToolStripItem ts, EnumEtatFeuSignalisation stateAvoid)
+        {
+            return new Action<FeuSignalisation, EnumEtatFeuSignalisation>((f, e) => {
+                if (InvokeRequired)
+                    Invoke(() => UpdateMenu(ts, e != stateAvoid));
+                else
+                    UpdateMenu(ts, e!= stateAvoid);
+                }
+            );
+        }
+        private void GenererPasserRouge(FeuSignalisation f)
+        {
+            ToolStripItem added = rougeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Rouge));
+
+        }
         private void GenererPasserVert(FeuSignalisation f)
         {
-            ToolStripItem added = orangeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
-            f.Event_OnStateChanged += ((p, e) => {
-                bool expression = e != EnumEtatFeuSignalisation.Vert;
-                if (InvokeRequired)
-                    Invoke(() => UpdateMenu(added, expression));
-                else
-                    UpdateMenu(added, expression);
-            });
+            ToolStripItem added = vertToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Vert));
         }
 
         private void GenererPasserOrange(FeuSignalisation f)
         {
-            ToolStripItem added = vertToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
-            f.Event_OnStateChanged += ((p, e) => {
-                bool expression = e != EnumEtatFeuSignalisation.Orange;
-                if (InvokeRequired)
-                    Invoke(() => UpdateMenu(added, expression));
-                else
-                     UpdateMenu(added, expression);
-            });
+            
+            ToolStripItem added = orangeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Orange));
         }
     }
 }

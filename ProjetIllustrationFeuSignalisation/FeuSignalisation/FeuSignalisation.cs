@@ -8,7 +8,13 @@
         private int tempsVertMilliseconds;
         private bool estAllimente;
         private Thread sonThread;
-        public EnumEtatFeuSignalisation sonEtat;  
+        public EnumEtatFeuSignalisation sonEtat;
+
+        #region partie utile mode sans Fnc Flechees
+        private int numeroUnique;
+        private static int numeroId = 1;
+        public int NumeroUnique { get => numeroUnique;  }
+        #endregion
 
         public delegate void OnStateChanged(FeuSignalisation sender, EnumEtatFeuSignalisation nouvelEtat);
         public event OnStateChanged Event_OnStateChanged;
@@ -27,6 +33,8 @@
             estAllimente = true;
             sonThread = new Thread(new ThreadStart(AlternerSignalisation));
             sonThread.Start();
+            numeroUnique = numeroId;
+            numeroId++;
         }
 
         public FeuSignalisation(): this(20000, 5000, 20000, EnumEtatFeuSignalisation.Rouge){ } 
@@ -48,16 +56,16 @@
                 if (sonEtat == EnumEtatFeuSignalisation.Rouge)
                 {
                     Thread.Sleep(tempsRougeMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Orange;
+                    SonEtat = EnumEtatFeuSignalisation.Vert;
                 }
                 else if (sonEtat == EnumEtatFeuSignalisation.Orange)
                 {
                     Thread.Sleep(tempsOrangeMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Vert;
+                    SonEtat = EnumEtatFeuSignalisation.Rouge;
                 } else
                 {
                     Thread.Sleep(tempsVertMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Rouge;
+                    SonEtat = EnumEtatFeuSignalisation.Orange;
                 }
 
             }
