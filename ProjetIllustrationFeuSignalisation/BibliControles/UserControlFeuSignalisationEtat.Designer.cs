@@ -37,18 +37,18 @@
             this.labelFeu.AutoSize = true;
             this.labelFeu.Dock = System.Windows.Forms.DockStyle.Left;
             this.labelFeu.Location = new System.Drawing.Point(10, 10);
-            this.labelFeu.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.labelFeu.Margin = new System.Windows.Forms.Padding(0);
             this.labelFeu.Name = "labelFeu";
-            this.labelFeu.Size = new System.Drawing.Size(38, 15);
+            this.labelFeu.Size = new System.Drawing.Size(51, 15);
             this.labelFeu.TabIndex = 0;
             this.labelFeu.Text = "labelFeu";
             // 
             // panelCouleur
             // 
             this.panelCouleur.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCouleur.Location = new System.Drawing.Point(48, 10);
+            this.panelCouleur.Location = new System.Drawing.Point(61, 10);
             this.panelCouleur.Name = "panelCouleur";
-            this.panelCouleur.Size = new System.Drawing.Size(360, 20);
+            this.panelCouleur.Size = new System.Drawing.Size(347, 20);
             this.panelCouleur.TabIndex = 1;
             // 
             // UserControlFeuSignalisationEtat

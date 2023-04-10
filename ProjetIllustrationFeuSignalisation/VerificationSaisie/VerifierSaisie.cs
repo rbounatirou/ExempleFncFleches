@@ -4,7 +4,7 @@ namespace VerificationSaisie
 {
     public static class VerifierSaisie
     {
-        public static bool MatchForInt(string str) => MatchFor(str, "^[0-9]{1,11}");
+        public static bool MatchForInt(string str) => MatchFor(str, "^[0-9]{3,11}");
         private static bool MatchFor(string str, string regex)
         {
             Regex rg = new Regex(regex);

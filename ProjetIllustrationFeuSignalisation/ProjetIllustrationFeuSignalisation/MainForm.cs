@@ -78,20 +78,19 @@ namespace ProjetIllustrationFeuSignalisation
         private void GenererPasserRouge(FeuSignalisation f)
         {
             ToolStripItem added = rougeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
-            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Rouge));
-
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Rouge));           
         }
         private void GenererPasserVert(FeuSignalisation f)
         {
             ToolStripItem added = vertToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
-            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Vert));
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Vert));           
         }
 
         private void GenererPasserOrange(FeuSignalisation f)
         {
             
             ToolStripItem added = orangeToolStripMenuItem.DropDownItems.Add(String.Format("feu{0} {1}", (nbFeux > 1 ? "x" : ""), nbFeux));
-            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Orange));
+            f.Event_OnStateChanged += new FeuSignalisation.OnStateChanged(GenerateAction(added, EnumEtatFeuSignalisation.Orange));          
         }
     }
 }

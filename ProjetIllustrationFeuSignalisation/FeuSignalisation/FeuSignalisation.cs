@@ -7,6 +7,7 @@
         private int tempsOrangeMilliseconds;
         private int tempsVertMilliseconds;
         private bool estAllimente;
+        private bool estVerouille;
         private Thread sonThread;
         public EnumEtatFeuSignalisation sonEtat;
 
@@ -35,6 +36,7 @@
             sonThread.Start();
             numeroUnique = numeroId;
             numeroId++;
+            estVerouille = false;
         }
 
         public FeuSignalisation(): this(20000, 5000, 20000, EnumEtatFeuSignalisation.Rouge){ } 
@@ -53,22 +55,36 @@
             
             while (estAllimente)
             {
-                if (sonEtat == EnumEtatFeuSignalisation.Rouge)
+                lock (this)
                 {
-                    Thread.Sleep(tempsRougeMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Vert;
+                    if (!estVerouille)
+                    {
+                        if (sonEtat == EnumEtatFeuSignalisation.Rouge)
+                        {
+                            Thread.Sleep(tempsRougeMilliseconds-100);
+                            SonEtat = EnumEtatFeuSignalisation.Vert;
+                        }
+                        else if (sonEtat == EnumEtatFeuSignalisation.Orange)
+                        {
+                            Thread.Sleep(tempsOrangeMilliseconds - 100);
+                            SonEtat = EnumEtatFeuSignalisation.Rouge;
+                        }
+                        else
+                        {
+                            Thread.Sleep(tempsVertMilliseconds-100);
+                            SonEtat = EnumEtatFeuSignalisation.Orange;
+                        }
+                    }
                 }
-                else if (sonEtat == EnumEtatFeuSignalisation.Orange)
-                {
-                    Thread.Sleep(tempsOrangeMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Rouge;
-                } else
-                {
-                    Thread.Sleep(tempsVertMilliseconds);
-                    SonEtat = EnumEtatFeuSignalisation.Orange;
-                }
+                Thread.Sleep(100);
 
             }
+        }
+
+        public void VerouillerEtat(EnumEtatFeuSignalisation e)
+        {
+            this.SonEtat = e;
+            this.estVerouille = true;
         }
 
     }
