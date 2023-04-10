@@ -20,9 +20,14 @@
             RQ5(list);
             RQ6(list);
 
+            Console.WriteLine("Resultat attendu : false");
+            Solution_RQ7(list);
+            Console.WriteLine("Resultat attendu: true");
+            list.Add(new Personne("POMME", "Olivier", 35));
+            Solution_RQ7(list);
+            Solution_RQ8(list);
             List<int> nbrs = new List<int> { 1, 5, 2, 3, 4, 8, 9 };
-            RQ7(nbrs);
-     
+            RQ9(nbrs);
         }
 
         /*
@@ -112,17 +117,43 @@
         }
 
 
-        /* Diviser par 2 les nombres fourni
-         * la partie après la virgule doit être présente */
-        static void RQ7(List<int> nb)
+
+        /* Savoir si une personne de plus de 30 ans existe
+         * Fonction joué deux fois 
+         * False la première fois
+         * True la deuxième fois */
+        static void RQ7(List<Personne> p)
         {
-            Console.WriteLine("-Requete 7-- Division par deux des nombres");
-            
-            // REQUETE ICI (2 lignes)
-            
+            Console.WriteLine("-Requete 7 -- Personne plus de 30 ans existe");
+            bool result=false;
+            // REQUETE ICI (1 lignes)
+           
 
             // FIN REQUETE
-            
+            Console.WriteLine(result);
+        }
+
+
+        /* Retire de la liste poire aurelie, 
+         * la requete ne doit pas tenir compte de la casse */
+        static void RQ8(List<Personne> p)
+        {
+            Console.WriteLine("Requete 8 -- Retier POIRE Aurelie");
+            // REQUETE ICI (1 lignes)
+
+
+            // FIN REQUETE
+            AfficherListe(p);
+        }
+
+        static void RQ9(List<int> nb)
+        {
+            Console.WriteLine("-Requete -- Division par deux des nombres");
+
+            // REQUETE ICI (2 lignes)
+
+
+            // FIN REQUETE
         }
 
 
@@ -192,9 +223,27 @@
             Console.WriteLine(age);
         }
 
-        static void Solution_RQ7(List<int> nb)
+        static void Solution_RQ7(List<Personne> p)
         {
-            Console.WriteLine("-Requete 7-- Division par deux des nombres");
+            Console.WriteLine("-Requete 7 -- Personne plus de 30 ans existe");
+            bool result;
+            // REQUETE ICI (1 lignes)
+            result = p.Exists(x => x.age > 30);
+
+            // FIN REQUETE
+            Console.WriteLine(result);
+        }
+
+        static void Solution_RQ8(List<Personne> p)
+        {
+            Console.WriteLine("Requete 8 -- Retier POIRE Aurelie");
+            p.RemoveAll(x => x.nom.ToLower() == "poire" && x.prenom.ToLower() == "aurelie");
+            AfficherListe(p);
+        }
+
+        static void Solution_RQ9(List<int> nb)
+        {
+            Console.WriteLine("-Requete 9-- Division par deux des nombres");
 
             List<double> rt = new();
             nb.ForEach(i=>rt.Add(i/2.0D));
